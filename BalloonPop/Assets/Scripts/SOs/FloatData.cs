@@ -14,7 +14,5 @@ public class FloatData : ScriptableObject
     {
         value = num;
     }
-
-    
-    
+    //Anthony Romrell https://github.com/anthonyromrell/2670ScriptingFall2021/tree/main/2670part2/Assets
 }
