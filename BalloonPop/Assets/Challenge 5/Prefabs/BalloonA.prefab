@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3359691383217465819}
   m_Layer: 0
   m_Name: BalloonA
-  m_TagString: Untagged
+  m_TagString: Sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8205775629415888432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 720, y: 75.5, z: -17.8}
-  m_LocalScale: {x: 2.888311, y: 3.5440998, z: -0.6206832}
+  m_LocalScale: {x: 1.5, y: 1.8, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,5 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3699e57188cf04245bacfd0789ebcf6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointValue: 0
-  timeOnScreen: 1
+  pointValue: 5
+  timeOnScreen: 2

@@ -967,6 +967,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b285fd5d149e28f45bf0e59e41d471f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 116231999}
+  gameOverText: {fileID: 919200876}
+  titleScreen: {fileID: 92482018}
+  restartButton: {fileID: 1902351379}
+  targetPrefabs:
+  - {fileID: 8205775629415888432, guid: 62cad2844be483a4385465ceff1ad318, type: 3}
+  - {fileID: 1656041107852439606, guid: 2036bbe523843494593015df403e1d9d, type: 3}
+  - {fileID: 2871653827353127687, guid: 43337f1b71d82b04a944f3880ea4ad28, type: 3}
+  - {fileID: 6541874672587171374, guid: 8748ab45e8c787942a46eb79090d67d4, type: 3}
+  isGameActive: 0
 --- !u!4 &1128873052
 Transform:
   m_ObjectHideFlags: 0
@@ -1265,7 +1275,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1390857138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f487199cba435ead2b04905b1c9b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d4ec3b0d3e6d8a4793bd97d92ef4c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: 2
@@ -1894,7 +1904,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128873051}
+      - m_Target: {fileID: 0}
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -1991,7 +2001,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1910376314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f487199cba435ead2b04905b1c9b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d4ec3b0d3e6d8a4793bd97d92ef4c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: 3
@@ -2124,7 +2134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2064518093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f487199cba435ead2b04905b1c9b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d4ec3b0d3e6d8a4793bd97d92ef4c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: 1
