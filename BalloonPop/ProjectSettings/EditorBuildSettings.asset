@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Challenge 5/BalloonPop.unity
+    path: Assets/Scenes/BalloonPop.unity
     guid: 2c85e4f6638394ea8b8154a3b832357b
   m_configObjects: {}
