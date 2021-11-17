@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
+﻿using System.Collections;
 using UnityEngine;
-using Random = UnityEngine.Random;
-using Vector3 = UnityEngine.Vector3;
 
 public class Target : MonoBehaviour
 {
@@ -29,11 +24,13 @@ public class Target : MonoBehaviour
 
     IEnumerator RemoveObjectRoutine()
     {
-        yield return new WaitForSeconds(timeOnScreen);
-        if (gameManager.isGameActive)
-        {
-            transform.Translate(Vector3.forward*5,Space.World);
-        }
+        
+            yield return new WaitForSeconds(timeOnScreen);
+            if (gameManager.isGameActive)
+            {
+                transform.Translate(Vector3.forward * 5, Space.World);
+            }
+        
     }
 
 
@@ -62,11 +59,6 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);  
-        
-        if(other.gameObject.CompareTag("Sensor")&& !gameObject.CompareTag("Bad"))
-        {
-            gameManager.GameOver();
-        }
+        Destroy(gameObject);
     }
 }
