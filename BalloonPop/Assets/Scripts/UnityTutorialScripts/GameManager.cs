@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
          
             
             int index = Random.Range(0, targetPrefabs.Count);
-            spawnRate = Mathf.MoveTowards(spawnRate, .2f, .001f);
+            spawnRate = Mathf.MoveTowards(spawnRate, .2f, .01f);
             Debug.Log(spawnRate);
 
 
@@ -78,9 +78,8 @@ public class GameManager : MonoBehaviour
             {
                Instantiate(targetPrefabs[index], RandomSpawnPosition(), targetPrefabs[index].transform.rotation);
                yield return new WaitForSeconds(spawnRate);
-               
             }
-         
+
       }
 
       Vector3 RandomSpawnPosition()

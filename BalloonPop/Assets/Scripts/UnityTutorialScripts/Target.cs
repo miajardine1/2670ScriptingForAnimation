@@ -42,7 +42,6 @@ public class Target : MonoBehaviour
             gameManager.UpdateScore(pointValue);
         }
     }
-
     Vector3 RandomSpawnPosition()
     {
         float spawnPosX = minValueX + (RandomSquareIndex() * spaceBetweenSquares);
