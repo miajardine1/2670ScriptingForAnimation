@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 {
    public TextMeshProUGUI scoreText;
    public TextMeshProUGUI gameOverText;
+   public TextMeshProUGUI gameOverTextTwo;
 
    public GameObject titleScreen;
    public Button restartButton;
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
 
    private float spaceBetweenSquares = 2.5f;
    private float minValueX = -3.75f;
-   private float minValueY = -3.75f;
+   private float minValueY = -3.25f;
 
    private Button button;
 
@@ -51,6 +52,12 @@ public class GameManager : MonoBehaviour
       restartButton.gameObject.SetActive(true);
       isGameActive = false;
    }
+   public void GameOverTwo()
+      {
+         gameOverTextTwo.gameObject.SetActive(true);
+         restartButton.gameObject.SetActive(true);
+         isGameActive = false;
+      }
    
    public void RestartGame()
    {

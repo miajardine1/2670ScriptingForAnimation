@@ -60,6 +60,12 @@ public class BadTarget : MonoBehaviour
     {
         return Random.Range(0, 4);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        Destroy(gameObject);
+    }
 }
 
 
